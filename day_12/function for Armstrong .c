@@ -7,26 +7,20 @@ int isArmstrong(int n) {
     int sum = 0;
     int digits = 0;
     int temp = n;
-
-    // Count the number of digits
     while (temp > 0) {
         digits++;
         temp /= 10;
     }
-
-    // Calculate the sum of each digit raised to the power of the number of digits
     temp = n;
     while (temp > 0) {
         int digit = temp % 10;
         sum += pow(digit, digits);
         temp /= 10;
     }
-
-    // Check if the sum equals the original number
     if (sum == original) {
-        return 1; // It's an Armstrong number
+        return 1; 
     } else {
-        return 0; // It's not an Armstrong number
+        return 0;
     }
 }
 
