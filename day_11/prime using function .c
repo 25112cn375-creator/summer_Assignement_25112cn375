@@ -1,4 +1,4 @@
-// 43. Write a program to Write function to check prime.
+// 43. Write a program to check prime using function.
 #include<stdio.h>
 int checkPrime(int n) {
     int i, isPrime = 1;
