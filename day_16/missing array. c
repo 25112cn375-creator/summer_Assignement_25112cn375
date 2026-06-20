@@ -1,0 +1,18 @@
+// Write a program to Find missing number in array.
+#include<stdio.h>
+int main (){
+    // Write a program to Find missing number in array.
+    int n, i,sum=0, total;
+    printf("enter the size of array :");
+    scanf("%d", &n);
+    int arr[n-1];
+    printf("enter the elements :");
+    for(i=0;i<n-1;i++)
+    {
+        scanf("%d", &arr[i]);
+        sum =sum+ arr[i];
+    }
+    total = (n* (n + 1)) / 2 ;
+    printf("missing number is : %d", total - sum);
+    return 0;
+}
